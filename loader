@@ -1,0 +1,2568 @@
+--Source made by 67rl.
+-- July 2 2024 made.
+
+--MAIN LOADER BOOSTER---
+
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "💵 | Zay's Script Hub (💷BUYER)", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+
+
+--MAIN LOADER BOOSTER
+
+
+
+local Tab = Window:MakeTab({
+	Name = "Information",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+--[[
+Name = <string> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+]]
+
+Tab:AddParagraph("1","The script hub was created by zay on July 2nd. If you want to receive updates, please join our Discord server. The script hub has been worked on for 35 minutes, and the owner has paid 600 for me to create this.")
+
+Tab:AddParagraph("2","The script is safe and protected you can run our NoLogging Script In our Tools Tab so you're info will be safe, If you have questions about the script DM one of the support or the admin. ")
+
+
+
+local Tab = Window:MakeTab({
+	Name = "Quick Tools",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+
+Tab:AddButton({
+	Name = "✅ | Sirius",
+	Callback = function()
+		loadstring(game:HttpGet('https://sirius.menu/script'))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "✅ |Infinte Yield",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Aimbot",
+	Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/1Gp9c57U"))()
+  	end    
+})
+
+
+
+Tab:AddButton({
+	Name = "QuirkyCMS",
+	Callback = function()
+        -- QuirkyCMD made by quirky anime boy (smokedoutlocedout on discord)
+-- Discord server with games list, plugins, etc:  https://discord.gg/aG6KdRje3x
+-- Testing game: https://www.roblox.com/games/7593160773
+loadstring(game:HttpGet("https://gist.github.com/someunknowndude/38cecea5be9d75cb743eac8b1eaf6758/raw"))()
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Admin",
+	Callback = function()
+      		--[[
+	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+]]
+loadstring(game:HttpGet("https://raw.githubusercontent.com/lxte/cmd/main/testing-main.lua"))()
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "NoLogging",
+	Callback = function()
+      		-- MADE BY ballsman3761 ON DISCORD OR libary.hello
+-- JOIN THE DISCORD: https://discord.gg/gYhqMRBeZV
+
+local randomstr = Instance.new("ScreenGui")
+local Holder = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Clearer = Instance.new("TextButton")
+local Splitter = Instance.new("Frame")
+local Info = Instance.new("TextLabel")
+local MAX = Instance.new("UITextSizeConstraint")
+local Clearer2 = Instance.new("TextButton")
+local Splitterrandomstr2 = Instance.new("Frame")
+
+randomstr.Name = 'RobloxGui' -- silly method :3
+randomstr.Parent = game:GetService("CoreGui")
+randomstr.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Holder.Name = "Holder"
+Holder.Parent = randomstr
+Holder.BackgroundColor3 = Color3.fromRGB(66, 66, 212)
+Holder.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Holder.BorderSizePixel = 0
+Holder.Position = UDim2.new(0.279100537, 0, 0.258639902, 0)
+Holder.Size = UDim2.new(0, 202, 0, 206)
+
+UICorner.Parent = Holder
+
+Clearer.Name = "Clearer"
+Clearer.Parent = Holder
+Clearer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Clearer.BackgroundTransparency = 1.000
+Clearer.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Clearer.BorderSizePixel = 0
+Clearer.Size = UDim2.new(0, 200, 0, 50)
+Clearer.Font = Enum.Font.GothamBold
+Clearer.Text = "Basic Clear"
+Clearer.TextColor3 = Color3.fromRGB(255, 255, 255)
+Clearer.TextScaled = true
+Clearer.TextSize = 14.000
+Clearer.TextWrapped = true
+
+Splitter.Name = "Splitter"
+Splitter.Parent = Holder
+Splitter.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+Splitter.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Splitter.BorderSizePixel = 0
+Splitter.Position = UDim2.new(0, 0, 0.242718443, 0)
+Splitter.Size = UDim2.new(1, 0, 0, 1)
+
+Info.Name = "Info"
+Info.Parent = Holder
+Info.Active = true
+Info.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Info.BackgroundTransparency = 1.000
+Info.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Info.BorderSizePixel = 0
+Info.Position = UDim2.new(0.00990098994, 0, 0.524271846, 0)
+Info.Selectable = true
+Info.Size = UDim2.new(0, 198, 0, 98)
+Info.Font = Enum.Font.GothamBold
+Info.Text = "This will add a chat cooldown whenever you clear your logs, It might not let you chat for a little after you clear depending on which clear you used."
+Info.TextColor3 = Color3.fromRGB(255, 255, 255)
+Info.TextScaled = true
+Info.TextSize = 14.000
+Info.TextWrapped = true
+Info.TextXAlignment = Enum.TextXAlignment.Left
+Info.TextYAlignment = Enum.TextYAlignment.Top
+
+MAX.Name = "MAX"
+MAX.Parent = Info
+MAX.MaxTextSize = 16
+MAX.MinTextSize = 14
+
+Clearer2.Name = "Clearer2"
+Clearer2.Parent = Holder
+Clearer2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Clearer2.BackgroundTransparency = 1.000
+Clearer2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Clearer2.BorderSizePixel = 0
+Clearer2.Position = UDim2.new(0, 0, 0, 51)
+Clearer2.Size = UDim2.new(0, 200, 0, 50)
+Clearer2.Font = Enum.Font.GothamBold
+Clearer2.Text = "Advanced Clear"
+Clearer2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Clearer2.TextScaled = true
+Clearer2.TextSize = 14.000
+Clearer2.TextWrapped = true
+
+Splitterrandomstr2.Name = "Splitter"
+Splitterrandomstr2.Parent = Holder
+Splitterrandomstr2.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+Splitterrandomstr2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Splitterrandomstr2.BorderSizePixel = 0
+Splitterrandomstr2.Position = UDim2.new(0, 0, 0, 101)
+Splitterrandomstr2.Size = UDim2.new(1, 0, 0, 1)
+local UserInputService = game:GetService('UserInputService');
+local TextChatService = game:GetService('TextChatService');
+Clearer.MouseButton1Click:Connect(function()
+	if TextChatService.ChatVersion == Enum.ChatVersion.TextChatService then
+		local chatBox = TextChatService:FindFirstChildOfClass("ChatInputBarConfiguration")
+		for i = 1, 10 do
+			chatBox.TargetTextChannel:SendAsync('')
+		end
+		Clearer.Text = 'Cleared!'
+		task.wait(2)
+		Clearer.Text = 'Basic Clear'
+	else
+	 local Path1 = game:GetService("ReplicatedStorage"):FindFirstChild("DefaultChatSystemChatEvents")
+	 if not Path1 then return error("DefaultChatSystemChatEvents is missing!\nChat logs will not be cleared.") end
+	 local Path2 = Path1:FindFirstChild('SayMessageRequest')
+	 if not Path2 then return error("SayMessageRequest is missing!\nChat logs will not be cleared.") end
+	 for i = 1, 10 do
+	  Path2:FireServer('', 'All')
+	 end
+	 Clearer.Text = 'Cleared!'
+	 task.wait(2)
+	 Clearer.Text = 'Basic Clear'
+	end
+end)
+Clearer2.MouseButton1Click:Connect(function()
+	if TextChatService.ChatVersion == Enum.ChatVersion.TextChatService then
+		local chatBox = TextChatService:FindFirstChildOfClass("ChatInputBarConfiguration")
+		for i = 1, 20 do
+			chatBox.TargetTextChannel:SendAsync('')
+		end
+		Clearer2.Text = 'Cleared!'
+		task.wait(2)
+		Clearer2.Text = 'Advanced Clear'
+	else
+		local Path1 = game:GetService("ReplicatedStorage"):FindFirstChild("DefaultChatSystemChatEvents")
+		if not Path1 then return error("DefaultChatSystemChatEvents is missing!\nChat logs will not be cleared.") end
+		local Path2 = Path1:FindFirstChild('SayMessageRequest')
+		if not Path2 then return error("SayMessageRequest is missing!\nChat logs will not be cleared.") end
+		for i = 1, 20 do
+			Path2:FireServer('', 'All')
+		end
+		Clearer2.Text = 'Cleared!'
+		task.wait(2)
+		Clearer2.Text = 'Advanced Clear'
+	end
+end)
+
+local isDragging = false
+local dragStartPos = nil
+local frameStartPos = nil
+
+local function handleInput(input)
+	if isDragging then
+		local delta = input.Position - dragStartPos
+		Holder.Position = UDim2.new(
+			frameStartPos.X.Scale, 
+			frameStartPos.X.Offset + delta.X, 
+			frameStartPos.Y.Scale, 
+			frameStartPos.Y.Offset + delta.Y
+		)
+	end
+end
+
+local function startDrag(input)
+	isDragging = true
+	dragStartPos = input.Position
+	frameStartPos = Holder.Position
+	input.UserInputState = Enum.UserInputState.Begin
+end
+
+local function stopDrag(input)
+	isDragging = false
+	input.UserInputState = Enum.UserInputState.End
+end
+
+Holder.InputBegan:Connect(function(input)
+	if input.UserInputType == Enum.UserInputType.MouseButton1 then
+		startDrag(input)
+	end
+end)
+
+UserInputService.InputChanged:Connect(function(input)
+	if isDragging and input.UserInputType == Enum.UserInputType.MouseMovement then
+		handleInput(input)
+	end
+end)
+
+UserInputService.InputEnded:Connect(function(input)
+	if input.UserInputType == Enum.UserInputType.MouseButton1 then
+		stopDrag(input)
+	end
+end)
+
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Mobile Fly",
+	Callback = function()
+      		--[[
+	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+]]
+--ARCEUS X FLY V2 SCRIPT
+loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\40\39\104\116\116\112\115\58\47\47\103\105\115\116\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\109\101\111\122\111\110\101\89\84\47\98\102\48\51\55\100\102\102\57\102\48\97\55\48\48\49\55\51\48\52\100\100\100\54\55\102\100\99\100\51\55\48\47\114\97\119\47\101\49\52\101\55\52\102\52\50\53\98\48\54\48\100\102\53\50\51\51\52\51\99\102\51\48\98\55\56\55\48\55\52\101\98\51\99\53\100\50\47\97\114\99\101\117\115\37\50\53\50\48\120\37\50\53\50\48\102\108\121\37\50\53\50\48\50\37\50\53\50\48\111\98\102\108\117\99\97\116\111\114\39\41\44\116\114\117\101\41\41\40\41\10\10")()
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Mobile Keyboard",
+	Callback = function()
+      		--[[
+	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+]]
+loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Speed GUI",
+	Callback = function()
+      --[[
+	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+]]
+-- Create GUI elements
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local TextBox = Instance.new("TextBox")
+
+-- Set properties for ScreenGui
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+-- Set properties for Frame
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(128, 128, 128) -- Grey color
+Frame.Size = UDim2.new(0, 200, 0, 100)
+Frame.Position = UDim2.new(0.5, -100, 0.5, -50) -- Centered
+
+-- Set properties for TextLabel
+TextLabel.Parent = Frame
+TextLabel.Text = "Speed"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 0) -- Yellow color
+TextLabel.Size = UDim2.new(1, 0, 0.4, 0)
+TextLabel.Position = UDim2.new(0, 0, 0, 0)
+TextLabel.TextScaled = true
+
+-- Set properties for TextBox
+TextBox.Parent = Frame
+TextBox.TextColor3 = Color3.fromRGB(255, 192, 203) -- Pink color
+TextBox.Size = UDim2.new(1, 0, 0.6, 0)
+TextBox.Position = UDim2.new(0, 0, 0.4, 0)
+TextBox.PlaceholderText = "Enter speed (max 10000)"
+TextBox.TextScaled = true
+
+-- Make the frame draggable
+local UserInputService = game:GetService("UserInputService")
+local dragging, dragInput, dragStart, startPos
+
+local function update(input)
+    local delta = input.Position - dragStart
+    Frame.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+end
+
+Frame.InputBegan:Connect(function(input)
+    if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+        dragging = true
+        dragStart = input.Position
+        startPos = Frame.Position
+        
+        input.Changed:Connect(function()
+            if input.UserInputState == Enum.UserInputState.End then
+                dragging = false
+            end
+        end)
+    end
+end)
+
+Frame.InputChanged:Connect(function(input)
+    if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+        dragInput = input
+    end
+end)
+
+UserInputService.InputChanged:Connect(function(input)
+    if dragging and input == dragInput then
+        update(input)
+    end
+end)
+
+-- Update player speed based on TextBox input
+TextBox.FocusLost:Connect(function(enterPressed)
+    if enterPressed then
+        local speed = tonumber(TextBox.Text)
+        if speed then
+            speed = math.clamp(speed, 0, 10000)
+            local player = game.Players.LocalPlayer
+            local character = player.Character or player.CharacterAdded:Wait()
+            local humanoid = character:WaitForChild("Humanoid")
+            humanoid.WalkSpeed = speed
+        end
+    end
+end)
+		
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+
+Tab:AddButton({
+	Name = "Unc Test",
+	Callback = function()
+		local passes, fails, undefined = 0, 0, 0
+		local running = 0
+		
+		local function getGlobal(path)
+			local value = getfenv(0)
+		
+			while value ~= nil and path ~= "" do
+				local name, nextValue = string.match(path, "^([^.]+)%.?(.*)$")
+				value = value[name]
+				path = nextValue
+			end
+		
+			return value
+		end
+		
+		local function test(name, aliases, callback)
+			running += 1
+		
+			task.spawn(function()
+				if not callback then
+					print("⏺️ " .. name)
+				elseif not getGlobal(name) then
+					fails += 1
+					warn("⛔ " .. name)
+				else
+					local success, message = pcall(callback)
+			
+					if success then
+						passes += 1
+						print("✅ " .. name .. (message and " • " .. message or ""))
+					else
+						fails += 1
+						warn("⛔ " .. name .. " failed: " .. message)
+					end
+				end
+			
+				local undefinedAliases = {}
+			
+				for _, alias in ipairs(aliases) do
+					if getGlobal(alias) == nil then
+						table.insert(undefinedAliases, alias)
+					end
+				end
+			
+				if #undefinedAliases > 0 then
+					undefined += 1
+					warn("⚠️ " .. table.concat(undefinedAliases, ", "))
+				end
+		
+				running -= 1
+			end)
+		end
+		
+		-- Header and summary
+		
+		print("\n")
+		
+		print("UNC Environment Check")
+		print("✅ - Pass, ⛔ - Fail, ⏺️ - No test, ⚠️ - Missing aliases\n")
+		
+		task.defer(function()
+			repeat task.wait() until running == 0
+		
+			local rate = math.round(passes / (passes + fails) * 100)
+			local outOf = passes .. " out of " .. (passes + fails)
+		
+			print("\n")
+		
+			print("UNC Summary")
+			print("✅ Tested with a " .. rate .. "% success rate (" .. outOf .. ")")
+			print("⛔ " .. fails .. " tests failed")
+			print("⚠️ " .. undefined .. " globals are missing aliases")
+		end)
+		
+		-- Cache
+		
+		test("cache.invalidate", {}, function()
+			local container = Instance.new("Folder")
+			local part = Instance.new("Part", container)
+			cache.invalidate(container:FindFirstChild("Part"))
+			assert(part ~= container:FindFirstChild("Part"), "Reference `part` could not be invalidated")
+		end)
+		
+		test("cache.iscached", {}, function()
+			local part = Instance.new("Part")
+			assert(cache.iscached(part), "Part should be cached")
+			cache.invalidate(part)
+			assert(not cache.iscached(part), "Part should not be cached")
+		end)
+		
+		test("cache.replace", {}, function()
+			local part = Instance.new("Part")
+			local fire = Instance.new("Fire")
+			cache.replace(part, fire)
+			assert(part ~= fire, "Part was not replaced with Fire")
+		end)
+		
+		test("cloneref", {}, function()
+			local part = Instance.new("Part")
+			local clone = cloneref(part)
+			assert(part ~= clone, "Clone should not be equal to original")
+			clone.Name = "Test"
+			assert(part.Name == "Test", "Clone should have updated the original")
+		end)
+		
+		test("compareinstances", {}, function()
+			local part = Instance.new("Part")
+			local clone = cloneref(part)
+			assert(part ~= clone, "Clone should not be equal to original")
+			assert(compareinstances(part, clone), "Clone should be equal to original when using compareinstances()")
+		end)
+		
+		-- Closures
+		
+		local function shallowEqual(t1, t2)
+			if t1 == t2 then
+				return true
+			end
+		
+			local UNIQUE_TYPES = {
+				["function"] = true,
+				["table"] = true,
+				["userdata"] = true,
+				["thread"] = true,
+			}
+		
+			for k, v in pairs(t1) do
+				if UNIQUE_TYPES[type(v)] then
+					if type(t2[k]) ~= type(v) then
+						return false
+					end
+				elseif t2[k] ~= v then
+					return false
+				end
+			end
+		
+			for k, v in pairs(t2) do
+				if UNIQUE_TYPES[type(v)] then
+					if type(t2[k]) ~= type(v) then
+						return false
+					end
+				elseif t1[k] ~= v then
+					return false
+				end
+			end
+		
+			return true
+		end
+		
+		test("checkcaller", {}, function()
+			assert(checkcaller(), "Main scope should return true")
+		end)
+		
+		test("clonefunction", {}, function()
+			local function test()
+				return "success"
+			end
+			local copy = clonefunction(test)
+			assert(test() == copy(), "The clone should return the same value as the original")
+			assert(test ~= copy, "The clone should not be equal to the original")
+		end)
+		
+		test("getcallingscript", {})
+		
+		test("getscriptclosure", {"getscriptfunction"}, function()
+			local module = game:GetService("CoreGui").RobloxGui.Modules.Common.Constants
+			local constants = getrenv().require(module)
+			local generated = getscriptclosure(module)()
+			assert(constants ~= generated, "Generated module should not match the original")
+			assert(shallowEqual(constants, generated), "Generated constant table should be shallow equal to the original")
+		end)
+		
+		test("hookfunction", {"replaceclosure"}, function()
+			local function test()
+				return true
+			end
+			local ref = hookfunction(test, function()
+				return false
+			end)
+			assert(test() == false, "Function should return false")
+			assert(ref() == true, "Original function should return true")
+			assert(test ~= ref, "Original function should not be same as the reference")
+		end)
+		
+		test("iscclosure", {}, function()
+			assert(iscclosure(print) == true, "Function 'print' should be a C closure")
+			assert(iscclosure(function() end) == false, "Executor function should not be a C closure")
+		end)
+		
+		test("islclosure", {}, function()
+			assert(islclosure(print) == false, "Function 'print' should not be a Lua closure")
+			assert(islclosure(function() end) == true, "Executor function should be a Lua closure")
+		end)
+		
+		test("isexecutorclosure", {"checkclosure", "isourclosure"}, function()
+			assert(isexecutorclosure(isexecutorclosure) == true, "Did not return true for an executor global")
+			assert(isexecutorclosure(newcclosure(function() end)) == true, "Did not return true for an executor C closure")
+			assert(isexecutorclosure(function() end) == true, "Did not return true for an executor Luau closure")
+			assert(isexecutorclosure(print) == false, "Did not return false for a Roblox global")
+		end)
+		
+		test("loadstring", {}, function()
+			local animate = game:GetService("Players").LocalPlayer.Character.Animate
+			local bytecode = getscriptbytecode(animate)
+			local func = loadstring(bytecode)
+			assert(type(func) ~= "function", "Luau bytecode should not be loadable!")
+			assert(assert(loadstring("return ... + 1"))(1) == 2, "Failed to do simple math")
+			assert(type(select(2, loadstring("f"))) == "string", "Loadstring did not return anything for a compiler error")
+		end)
+		
+		test("newcclosure", {}, function()
+			local function test()
+				return true
+			end
+			local testC = newcclosure(test)
+			assert(test() == testC(), "New C closure should return the same value as the original")
+			assert(test ~= testC, "New C closure should not be same as the original")
+			assert(iscclosure(testC), "New C closure should be a C closure")
+		end)
+		
+		-- Console
+		
+		test("rconsoleclear", {"consoleclear"})
+		
+		test("rconsolecreate", {"consolecreate"})
+		
+		test("rconsoledestroy", {"consoledestroy"})
+		
+		test("rconsoleinput", {"consoleinput"})
+		
+		test("rconsoleprint", {"consoleprint"})
+		
+		test("rconsolesettitle", {"rconsolename", "consolesettitle"})
+		
+		-- Crypt
+		
+		test("crypt.base64encode", {"crypt.base64.encode", "crypt.base64_encode", "base64.encode", "base64_encode"}, function()
+			assert(crypt.base64encode("test") == "dGVzdA==", "Base64 encoding failed")
+		end)
+		
+		test("crypt.base64decode", {"crypt.base64.decode", "crypt.base64_decode", "base64.decode", "base64_decode"}, function()
+			assert(crypt.base64decode("dGVzdA==") == "test", "Base64 decoding failed")
+		end)
+		
+		test("crypt.encrypt", {}, function()
+			local key = crypt.generatekey()
+			local encrypted, iv = crypt.encrypt("test", key, nil, "CBC")
+			assert(iv, "crypt.encrypt should return an IV")
+			local decrypted = crypt.decrypt(encrypted, key, iv, "CBC")
+			assert(decrypted == "test", "Failed to decrypt raw string from encrypted data")
+		end)
+		
+		test("crypt.decrypt", {}, function()
+			local key, iv = crypt.generatekey(), crypt.generatekey()
+			local encrypted = crypt.encrypt("test", key, iv, "CBC")
+			local decrypted = crypt.decrypt(encrypted, key, iv, "CBC")
+			assert(decrypted == "test", "Failed to decrypt raw string from encrypted data")
+		end)
+		
+		test("crypt.generatebytes", {}, function()
+			local size = math.random(10, 100)
+			local bytes = crypt.generatebytes(size)
+			assert(#crypt.base64decode(bytes) == size, "The decoded result should be " .. size .. " bytes long (got " .. #crypt.base64decode(bytes) .. " decoded, " .. #bytes .. " raw)")
+		end)
+		
+		test("crypt.generatekey", {}, function()
+			local key = crypt.generatekey()
+			assert(#crypt.base64decode(key) == 32, "Generated key should be 32 bytes long when decoded")
+		end)
+		
+		test("crypt.hash", {}, function()
+			local algorithms = {'sha1', 'sha384', 'sha512', 'md5', 'sha256', 'sha3-224', 'sha3-256', 'sha3-512'}
+			for _, algorithm in ipairs(algorithms) do
+				local hash = crypt.hash("test", algorithm)
+				assert(hash, "crypt.hash on algorithm '" .. algorithm .. "' should return a hash")
+			end
+		end)
+		
+		--- Debug
+		
+		test("debug.getconstant", {}, function()
+			local function test()
+				print("Hello, world!")
+			end
+			assert(debug.getconstant(test, 1) == "print", "First constant must be print")
+			assert(debug.getconstant(test, 2) == nil, "Second constant must be nil")
+			assert(debug.getconstant(test, 3) == "Hello, world!", "Third constant must be 'Hello, world!'")
+		end)
+		
+		test("debug.getconstants", {}, function()
+			local function test()
+				local num = 5000 .. 50000
+				print("Hello, world!", num, warn)
+			end
+			local constants = debug.getconstants(test)
+			assert(constants[1] == 50000, "First constant must be 50000")
+			assert(constants[2] == "print", "Second constant must be print")
+			assert(constants[3] == nil, "Third constant must be nil")
+			assert(constants[4] == "Hello, world!", "Fourth constant must be 'Hello, world!'")
+			assert(constants[5] == "warn", "Fifth constant must be warn")
+		end)
+		
+		test("debug.getinfo", {}, function()
+			local types = {
+				source = "string",
+				short_src = "string",
+				func = "function",
+				what = "string",
+				currentline = "number",
+				name = "string",
+				nups = "number",
+				numparams = "number",
+				is_vararg = "number",
+			}
+			local function test(...)
+				print(...)
+			end
+			local info = debug.getinfo(test)
+			for k, v in pairs(types) do
+				assert(info[k] ~= nil, "Did not return a table with a '" .. k .. "' field")
+				assert(type(info[k]) == v, "Did not return a table with " .. k .. " as a " .. v .. " (got " .. type(info[k]) .. ")")
+			end
+		end)
+		
+		test("debug.getproto", {}, function()
+			local function test()
+				local function proto()
+					return true
+				end
+			end
+			local proto = debug.getproto(test, 1, true)[1]
+			local realproto = debug.getproto(test, 1)
+			assert(proto, "Failed to get the inner function")
+			assert(proto() == true, "The inner function did not return anything")
+			if not realproto() then
+				return "Proto return values are disabled on this executor"
+			end
+		end)
+		
+		test("debug.getprotos", {}, function()
+			local function test()
+				local function _1()
+					return true
+				end
+				local function _2()
+					return true
+				end
+				local function _3()
+					return true
+				end
+			end
+			for i in ipairs(debug.getprotos(test)) do
+				local proto = debug.getproto(test, i, true)[1]
+				local realproto = debug.getproto(test, i)
+				assert(proto(), "Failed to get inner function " .. i)
+				if not realproto() then
+					return "Proto return values are disabled on this executor"
+				end
+			end
+		end)
+		
+		test("debug.getstack", {}, function()
+			local _ = "a" .. "b"
+			assert(debug.getstack(1, 1) == "ab", "The first item in the stack should be 'ab'")
+			assert(debug.getstack(1)[1] == "ab", "The first item in the stack table should be 'ab'")
+		end)
+		
+		test("debug.getupvalue", {}, function()
+			local upvalue = function() end
+			local function test()
+				print(upvalue)
+			end
+			assert(debug.getupvalue(test, 1) == upvalue, "Unexpected value returned from debug.getupvalue")
+		end)
+		
+		test("debug.getupvalues", {}, function()
+			local upvalue = function() end
+			local function test()
+				print(upvalue)
+			end
+			local upvalues = debug.getupvalues(test)
+			assert(upvalues[1] == upvalue, "Unexpected value returned from debug.getupvalues")
+		end)
+		
+		test("debug.setconstant", {}, function()
+			local function test()
+				return "fail"
+			end
+			debug.setconstant(test, 1, "success")
+			assert(test() == "success", "debug.setconstant did not set the first constant")
+		end)
+		
+		test("debug.setstack", {}, function()
+			local function test()
+				return "fail", debug.setstack(1, 1, "success")
+			end
+			assert(test() == "success", "debug.setstack did not set the first stack item")
+		end)
+		
+		test("debug.setupvalue", {}, function()
+			local function upvalue()
+				return "fail"
+			end
+			local function test()
+				return upvalue()
+			end
+			debug.setupvalue(test, 1, function()
+				return "success"
+			end)
+			assert(test() == "success", "debug.setupvalue did not set the first upvalue")
+		end)
+		
+		-- Filesystem
+		
+		if isfolder and makefolder and delfolder then
+			if isfolder(".tests") then
+				delfolder(".tests")
+			end
+			makefolder(".tests")
+		end
+		
+		test("readfile", {}, function()
+			writefile(".tests/readfile.txt", "success")
+			assert(readfile(".tests/readfile.txt") == "success", "Did not return the contents of the file")
+		end)
+		
+		test("listfiles", {}, function()
+			makefolder(".tests/listfiles")
+			writefile(".tests/listfiles/test_1.txt", "success")
+			writefile(".tests/listfiles/test_2.txt", "success")
+			local files = listfiles(".tests/listfiles")
+			assert(#files == 2, "Did not return the correct number of files")
+			assert(isfile(files[1]), "Did not return a file path")
+			assert(readfile(files[1]) == "success", "Did not return the correct files")
+			makefolder(".tests/listfiles_2")
+			makefolder(".tests/listfiles_2/test_1")
+			makefolder(".tests/listfiles_2/test_2")
+			local folders = listfiles(".tests/listfiles_2")
+			assert(#folders == 2, "Did not return the correct number of folders")
+			assert(isfolder(folders[1]), "Did not return a folder path")
+		end)
+		
+		test("writefile", {}, function()
+			writefile(".tests/writefile.txt", "success")
+			assert(readfile(".tests/writefile.txt") == "success", "Did not write the file")
+			local requiresFileExt = pcall(function()
+				writefile(".tests/writefile", "success")
+				assert(isfile(".tests/writefile.txt"))
+			end)
+			if not requiresFileExt then
+				return "This executor requires a file extension in writefile"
+			end
+		end)
+		
+		test("makefolder", {}, function()
+			makefolder(".tests/makefolder")
+			assert(isfolder(".tests/makefolder"), "Did not create the folder")
+		end)
+		
+		test("appendfile", {}, function()
+			writefile(".tests/appendfile.txt", "su")
+			appendfile(".tests/appendfile.txt", "cce")
+			appendfile(".tests/appendfile.txt", "ss")
+			assert(readfile(".tests/appendfile.txt") == "success", "Did not append the file")
+		end)
+		
+		test("isfile", {}, function()
+			writefile(".tests/isfile.txt", "success")
+			assert(isfile(".tests/isfile.txt") == true, "Did not return true for a file")
+			assert(isfile(".tests") == false, "Did not return false for a folder")
+			assert(isfile(".tests/doesnotexist.exe") == false, "Did not return false for a nonexistent path (got " .. tostring(isfile(".tests/doesnotexist.exe")) .. ")")
+		end)
+		
+		test("isfolder", {}, function()
+			assert(isfolder(".tests") == true, "Did not return false for a folder")
+			assert(isfolder(".tests/doesnotexist.exe") == false, "Did not return false for a nonexistent path (got " .. tostring(isfolder(".tests/doesnotexist.exe")) .. ")")
+		end)
+		
+		test("delfolder", {}, function()
+			makefolder(".tests/delfolder")
+			delfolder(".tests/delfolder")
+			assert(isfolder(".tests/delfolder") == false, "Failed to delete folder (isfolder = " .. tostring(isfolder(".tests/delfolder")) .. ")")
+		end)
+		
+		test("delfile", {}, function()
+			writefile(".tests/delfile.txt", "Hello, world!")
+			delfile(".tests/delfile.txt")
+			assert(isfile(".tests/delfile.txt") == false, "Failed to delete file (isfile = " .. tostring(isfile(".tests/delfile.txt")) .. ")")
+		end)
+		
+		test("loadfile", {}, function()
+			writefile(".tests/loadfile.txt", "return ... + 1")
+			assert(assert(loadfile(".tests/loadfile.txt"))(1) == 2, "Failed to load a file with arguments")
+			writefile(".tests/loadfile.txt", "f")
+			local callback, err = loadfile(".tests/loadfile.txt")
+			assert(err and not callback, "Did not return an error message for a compiler error")
+		end)
+		
+		test("dofile", {})
+		
+		-- Input
+		
+		test("isrbxactive", {"isgameactive"}, function()
+			assert(type(isrbxactive()) == "boolean", "Did not return a boolean value")
+		end)
+		
+		test("mouse1click", {})
+		
+		test("mouse1press", {})
+		
+		test("mouse1release", {})
+		
+		test("mouse2click", {})
+		
+		test("mouse2press", {})
+		
+		test("mouse2release", {})
+		
+		test("mousemoveabs", {})
+		
+		test("mousemoverel", {})
+		
+		test("mousescroll", {})
+		
+		-- Instances
+		
+		test("fireclickdetector", {}, function()
+			local detector = Instance.new("ClickDetector")
+			fireclickdetector(detector, 50, "MouseHoverEnter")
+		end)
+		
+		test("getcallbackvalue", {}, function()
+			local bindable = Instance.new("BindableFunction")
+			local function test()
+			end
+			bindable.OnInvoke = test
+			assert(getcallbackvalue(bindable, "OnInvoke") == test, "Did not return the correct value")
+		end)
+		
+		test("getconnections", {}, function()
+			local types = {
+				Enabled = "boolean",
+				ForeignState = "boolean",
+				LuaConnection = "boolean",
+				Function = "function",
+				Thread = "thread",
+				Fire = "function",
+				Defer = "function",
+				Disconnect = "function",
+				Disable = "function",
+				Enable = "function",
+			}
+			local bindable = Instance.new("BindableEvent")
+			bindable.Event:Connect(function() end)
+			local connection = getconnections(bindable.Event)[1]
+			for k, v in pairs(types) do
+				assert(connection[k] ~= nil, "Did not return a table with a '" .. k .. "' field")
+				assert(type(connection[k]) == v, "Did not return a table with " .. k .. " as a " .. v .. " (got " .. type(connection[k]) .. ")")
+			end
+		end)
+		
+		test("getcustomasset", {}, function()
+			writefile(".tests/getcustomasset.txt", "success")
+			local contentId = getcustomasset(".tests/getcustomasset.txt")
+			assert(type(contentId) == "string", "Did not return a string")
+			assert(#contentId > 0, "Returned an empty string")
+			assert(string.match(contentId, "rbxasset://") == "rbxasset://", "Did not return an rbxasset url")
+		end)
+		
+		test("gethiddenproperty", {}, function()
+			local fire = Instance.new("Fire")
+			local property, isHidden = gethiddenproperty(fire, "size_xml")
+			assert(property == 5, "Did not return the correct value")
+			assert(isHidden == true, "Did not return whether the property was hidden")
+		end)
+		
+		test("sethiddenproperty", {}, function()
+			local fire = Instance.new("Fire")
+			local hidden = sethiddenproperty(fire, "size_xml", 10)
+			assert(hidden, "Did not return true for the hidden property")
+			assert(gethiddenproperty(fire, "size_xml") == 10, "Did not set the hidden property")
+		end)
+		
+		test("gethui", {}, function()
+			assert(typeof(gethui()) == "Instance", "Did not return an Instance")
+		end)
+		
+		test("getinstances", {}, function()
+			assert(getinstances()[1]:IsA("Instance"), "The first value is not an Instance")
+		end)
+		
+		test("getnilinstances", {}, function()
+			assert(getnilinstances()[1]:IsA("Instance"), "The first value is not an Instance")
+			assert(getnilinstances()[1].Parent == nil, "The first value is not parented to nil")
+		end)
+		
+		test("isscriptable", {}, function()
+			local fire = Instance.new("Fire")
+			assert(isscriptable(fire, "size_xml") == false, "Did not return false for a non-scriptable property (size_xml)")
+			assert(isscriptable(fire, "Size") == true, "Did not return true for a scriptable property (Size)")
+		end)
+		
+		test("setscriptable", {}, function()
+			local fire = Instance.new("Fire")
+			local wasScriptable = setscriptable(fire, "size_xml", true)
+			assert(wasScriptable == false, "Did not return false for a non-scriptable property (size_xml)")
+			assert(isscriptable(fire, "size_xml") == true, "Did not set the scriptable property")
+			fire = Instance.new("Fire")
+			assert(isscriptable(fire, "size_xml") == false, "⚠️⚠️ setscriptable persists between unique instances ⚠️⚠️")
+		end)
+		
+		test("setrbxclipboard", {})
+		
+		-- Metatable
+		
+		test("getrawmetatable", {}, function()
+			local metatable = { __metatable = "Locked!" }
+			local object = setmetatable({}, metatable)
+			assert(getrawmetatable(object) == metatable, "Did not return the metatable")
+		end)
+		
+		test("hookmetamethod", {}, function()
+			local object = setmetatable({}, { __index = newcclosure(function() return false end), __metatable = "Locked!" })
+			local ref = hookmetamethod(object, "__index", function() return true end)
+			assert(object.test == true, "Failed to hook a metamethod and change the return value")
+			assert(ref() == false, "Did not return the original function")
+		end)
+		
+		test("getnamecallmethod", {}, function()
+			local method
+			local ref
+			ref = hookmetamethod(game, "__namecall", function(...)
+				if not method then
+					method = getnamecallmethod()
+				end
+				return ref(...)
+			end)
+			game:GetService("Lighting")
+			assert(method == "GetService", "Did not get the correct method (GetService)")
+		end)
+		
+		test("isreadonly", {}, function()
+			local object = {}
+			table.freeze(object)
+			assert(isreadonly(object), "Did not return true for a read-only table")
+		end)
+		
+		test("setrawmetatable", {}, function()
+			local object = setmetatable({}, { __index = function() return false end, __metatable = "Locked!" })
+			local objectReturned = setrawmetatable(object, { __index = function() return true end })
+			assert(object, "Did not return the original object")
+			assert(object.test == true, "Failed to change the metatable")
+			if objectReturned then
+				return objectReturned == object and "Returned the original object" or "Did not return the original object"
+			end
+		end)
+		
+		test("setreadonly", {}, function()
+			local object = { success = false }
+			table.freeze(object)
+			setreadonly(object, false)
+			object.success = true
+			assert(object.success, "Did not allow the table to be modified")
+		end)
+		
+		-- Miscellaneous
+		
+		test("identifyexecutor", {"getexecutorname"}, function()
+			local name, version = identifyexecutor()
+			assert(type(name) == "string", "Did not return a string for the name")
+			return type(version) == "string" and "Returns version as a string" or "Does not return version"
+		end)
+		
+		test("lz4compress", {}, function()
+			local raw = "Hello, world!"
+			local compressed = lz4compress(raw)
+			assert(type(compressed) == "string", "Compression did not return a string")
+			assert(lz4decompress(compressed, #raw) == raw, "Decompression did not return the original string")
+		end)
+		
+		test("lz4decompress", {}, function()
+			local raw = "Hello, world!"
+			local compressed = lz4compress(raw)
+			assert(type(compressed) == "string", "Compression did not return a string")
+			assert(lz4decompress(compressed, #raw) == raw, "Decompression did not return the original string")
+		end)
+		
+		test("messagebox", {})
+		
+		test("queue_on_teleport", {"queueonteleport"})
+		
+		test("request", {"http.request", "http_request"}, function()
+			local response = request({
+				Url = "https://httpbin.org/user-agent",
+				Method = "GET",
+			})
+			assert(type(response) == "table", "Response must be a table")
+			assert(response.StatusCode == 200, "Did not return a 200 status code")
+			local data = game:GetService("HttpService"):JSONDecode(response.Body)
+			assert(type(data) == "table" and type(data["user-agent"]) == "string", "Did not return a table with a user-agent key")
+			return "User-Agent: " .. data["user-agent"]
+		end)
+		
+		test("setclipboard", {"toclipboard"})
+		
+		test("setfpscap", {}, function()
+			local renderStepped = game:GetService("RunService").RenderStepped
+			local function step()
+				renderStepped:Wait()
+				local sum = 0
+				for _ = 1, 5 do
+					sum += 1 / renderStepped:Wait()
+				end
+				return math.round(sum / 5)
+			end
+			setfpscap(60)
+			local step60 = step()
+			setfpscap(0)
+			local step0 = step()
+			return step60 .. "fps @60 • " .. step0 .. "fps @0"
+		end)
+		
+		-- Scripts
+		
+		test("getgc", {}, function()
+			local gc = getgc()
+			assert(type(gc) == "table", "Did not return a table")
+			assert(#gc > 0, "Did not return a table with any values")
+		end)
+		
+		test("getgenv", {}, function()
+			getgenv().__TEST_GLOBAL = true
+			assert(__TEST_GLOBAL, "Failed to set a global variable")
+			getgenv().__TEST_GLOBAL = nil
+		end)
+		
+		test("getloadedmodules", {}, function()
+			local modules = getloadedmodules()
+			assert(type(modules) == "table", "Did not return a table")
+			assert(#modules > 0, "Did not return a table with any values")
+			assert(typeof(modules[1]) == "Instance", "First value is not an Instance")
+			assert(modules[1]:IsA("ModuleScript"), "First value is not a ModuleScript")
+		end)
+		
+		test("getrenv", {}, function()
+			assert(_G ~= getrenv()._G, "The variable _G in the executor is identical to _G in the game")
+		end)
+		
+		test("getrunningscripts", {}, function()
+			local scripts = getrunningscripts()
+			assert(type(scripts) == "table", "Did not return a table")
+			assert(#scripts > 0, "Did not return a table with any values")
+			assert(typeof(scripts[1]) == "Instance", "First value is not an Instance")
+			assert(scripts[1]:IsA("ModuleScript") or scripts[1]:IsA("LocalScript"), "First value is not a ModuleScript or LocalScript")
+		end)
+		
+		test("getscriptbytecode", {"dumpstring"}, function()
+			local animate = game:GetService("Players").LocalPlayer.Character.Animate
+			local bytecode = getscriptbytecode(animate)
+			assert(type(bytecode) == "string", "Did not return a string for Character.Animate (a " .. animate.ClassName .. ")")
+		end)
+		
+		test("getscripthash", {}, function()
+			local animate = game:GetService("Players").LocalPlayer.Character.Animate:Clone()
+			local hash = getscripthash(animate)
+			local source = animate.Source
+			animate.Source = "print('Hello, world!')"
+			task.defer(function()
+				animate.Source = source
+			end)
+			local newHash = getscripthash(animate)
+			assert(hash ~= newHash, "Did not return a different hash for a modified script")
+			assert(newHash == getscripthash(animate), "Did not return the same hash for a script with the same source")
+		end)
+		
+		test("getscripts", {}, function()
+			local scripts = getscripts()
+			assert(type(scripts) == "table", "Did not return a table")
+			assert(#scripts > 0, "Did not return a table with any values")
+			assert(typeof(scripts[1]) == "Instance", "First value is not an Instance")
+			assert(scripts[1]:IsA("ModuleScript") or scripts[1]:IsA("LocalScript"), "First value is not a ModuleScript or LocalScript")
+		end)
+		
+		test("getsenv", {}, function()
+			local animate = game:GetService("Players").LocalPlayer.Character.Animate
+			local env = getsenv(animate)
+			assert(type(env) == "table", "Did not return a table for Character.Animate (a " .. animate.ClassName .. ")")
+			assert(env.script == animate, "The script global is not identical to Character.Animate")
+		end)
+		
+		test("getthreadidentity", {"getidentity", "getthreadcontext"}, function()
+			assert(type(getthreadidentity()) == "number", "Did not return a number")
+		end)
+		
+		test("setthreadidentity", {"setidentity", "setthreadcontext"}, function()
+			setthreadidentity(3)
+			assert(getthreadidentity() == 3, "Did not set the thread identity")
+		end)
+		
+		-- Drawing
+		
+		test("Drawing", {})
+		
+		test("Drawing.new", {}, function()
+			local drawing = Drawing.new("Square")
+			drawing.Visible = false
+			local canDestroy = pcall(function()
+				drawing:Destroy()
+			end)
+			assert(canDestroy, "Drawing:Destroy() should not throw an error")
+		end)
+		
+		test("Drawing.Fonts", {}, function()
+			assert(Drawing.Fonts.UI == 0, "Did not return the correct id for UI")
+			assert(Drawing.Fonts.System == 1, "Did not return the correct id for System")
+			assert(Drawing.Fonts.Plex == 2, "Did not return the correct id for Plex")
+			assert(Drawing.Fonts.Monospace == 3, "Did not return the correct id for Monospace")
+		end)
+		
+		test("isrenderobj", {}, function()
+			local drawing = Drawing.new("Image")
+			drawing.Visible = true
+			assert(isrenderobj(drawing) == true, "Did not return true for an Image")
+			assert(isrenderobj(newproxy()) == false, "Did not return false for a blank table")
+		end)
+		
+		test("getrenderproperty", {}, function()
+			local drawing = Drawing.new("Image")
+			drawing.Visible = true
+			assert(type(getrenderproperty(drawing, "Visible")) == "boolean", "Did not return a boolean value for Image.Visible")
+			local success, result = pcall(function()
+				return getrenderproperty(drawing, "Color")
+			end)
+			if not success or not result then
+				return "Image.Color is not supported"
+			end
+		end)
+		
+		test("setrenderproperty", {}, function()
+			local drawing = Drawing.new("Square")
+			drawing.Visible = true
+			setrenderproperty(drawing, "Visible", false)
+			assert(drawing.Visible == false, "Did not set the value for Square.Visible")
+		end)
+		
+		test("cleardrawcache", {}, function()
+			cleardrawcache()
+		end)
+		
+		-- WebSocket
+		
+		test("WebSocket", {})
+		
+		test("WebSocket.connect", {}, function()
+			local types = {
+				Send = "function",
+				Close = "function",
+				OnMessage = {"table", "userdata"},
+				OnClose = {"table", "userdata"},
+			}
+			local ws = WebSocket.connect("ws://echo.websocket.events")
+			assert(type(ws) == "table" or type(ws) == "userdata", "Did not return a table or userdata")
+			for k, v in pairs(types) do
+				if type(v) == "table" then
+					assert(table.find(v, type(ws[k])), "Did not return a " .. table.concat(v, ", ") .. " for " .. k .. " (a " .. type(ws[k]) .. ")")
+				else
+					assert(type(ws[k]) == v, "Did not return a " .. v .. " for " .. k .. " (a " .. type(ws[k]) .. ")")
+				end
+			end
+			ws:Close()
+		end)
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+
+Tab:AddButton({
+	Name = "Corner ESP",
+	Callback = function()
+      		-- Settings
+local Settings = {
+    Box_Color = Color3.fromRGB(255, 0, 0),
+    Box_Thickness = 2,
+    Team_Check = false,
+    Team_Color = false,
+    Autothickness = true
+}
+
+--Locals
+local Space = game:GetService("Workspace")
+local Player = game:GetService("Players").LocalPlayer
+local Camera = Space.CurrentCamera
+
+-- Locals
+local function NewLine(color, thickness)
+    local line = Drawing.new("Line")
+    line.Visible = false
+    line.From = Vector2.new(0, 0)
+    line.To = Vector2.new(0, 0)
+    line.Color = color
+    line.Thickness = thickness
+    line.Transparency = 1
+    return line
+end
+
+local function Vis(lib, state)
+    for i, v in pairs(lib) do
+        v.Visible = state
+    end
+end
+
+local function Colorize(lib, color)
+    for i, v in pairs(lib) do
+        v.Color = color
+    end
+end
+
+local Black = Color3.fromRGB(0, 0, 0)
+
+local function Rainbow(lib, delay)
+    for hue = 0, 1, 1/30 do
+        local color = Color3.fromHSV(hue, 0.6, 1)
+        Colorize(lib, color)
+        wait(delay)
+    end
+    Rainbow(lib)
+end
+--Main Draw Function
+local function Main(plr)
+    repeat wait() until plr.Character ~= nil and plr.Character:FindFirstChild("Humanoid") ~= nil
+    local R15
+    if plr.Character.Humanoid.RigType == Enum.HumanoidRigType.R15 then
+        R15 = true
+    else 
+        R15 = false
+    end
+    local Library = {
+        TL1 = NewLine(Settings.Box_Color, Settings.Box_Thickness),
+        TL2 = NewLine(Settings.Box_Color, Settings.Box_Thickness),
+
+        TR1 = NewLine(Settings.Box_Color, Settings.Box_Thickness),
+        TR2 = NewLine(Settings.Box_Color, Settings.Box_Thickness),
+
+        BL1 = NewLine(Settings.Box_Color, Settings.Box_Thickness),
+        BL2 = NewLine(Settings.Box_Color, Settings.Box_Thickness),
+
+        BR1 = NewLine(Settings.Box_Color, Settings.Box_Thickness),
+        BR2 = NewLine(Settings.Box_Color, Settings.Box_Thickness)
+    }
+    coroutine.wrap(Rainbow)(Library, 0.15)
+    local oripart = Instance.new("Part")
+    oripart.Parent = Space
+    oripart.Transparency = 1
+    oripart.CanCollide = false
+    oripart.Size = Vector3.new(1, 1, 1)
+    oripart.Position = Vector3.new(0, 0, 0)
+    --Updater Loop
+    local function Updater()
+        local c 
+        c = game:GetService("RunService").RenderStepped:Connect(function()
+            if plr.Character ~= nil and plr.Character:FindFirstChild("Humanoid") ~= nil and plr.Character:FindFirstChild("HumanoidRootPart") ~= nil and plr.Character.Humanoid.Health > 0 and plr.Character:FindFirstChild("Head") ~= nil then
+                local Hum = plr.Character
+                local HumPos, vis = Camera:WorldToViewportPoint(Hum.HumanoidRootPart.Position)
+                if vis then
+                    oripart.Size = Vector3.new(Hum.HumanoidRootPart.Size.X, Hum.HumanoidRootPart.Size.Y*1.5, Hum.HumanoidRootPart.Size.Z)
+                    oripart.CFrame = CFrame.new(Hum.HumanoidRootPart.CFrame.Position, Camera.CFrame.Position)
+                    local SizeX = oripart.Size.X
+                    local SizeY = oripart.Size.Y
+                    local TL = Camera:WorldToViewportPoint((oripart.CFrame * CFrame.new(SizeX, SizeY, 0)).p)
+                    local TR = Camera:WorldToViewportPoint((oripart.CFrame * CFrame.new(-SizeX, SizeY, 0)).p)
+                    local BL = Camera:WorldToViewportPoint((oripart.CFrame * CFrame.new(SizeX, -SizeY, 0)).p)
+                    local BR = Camera:WorldToViewportPoint((oripart.CFrame * CFrame.new(-SizeX, -SizeY, 0)).p)
+
+                    if Settings.Team_Check then
+                        if plr.TeamColor == Player.TeamColor then
+                            Colorize(Library, Color3.fromRGB(0, 255, 0))
+                        else 
+                            Colorize(Library, Color3.fromRGB(255, 0, 0))
+                        end
+                    end
+
+                    if Settings.Team_Color then
+                        Colorize(Library, plr.TeamColor.Color)
+                    end
+
+                    local ratio = (Camera.CFrame.p - Hum.HumanoidRootPart.Position).magnitude
+                    local offset = math.clamp(1/ratio*750, 2, 300)
+
+                    Library.TL1.From = Vector2.new(TL.X, TL.Y)
+                    Library.TL1.To = Vector2.new(TL.X + offset, TL.Y)
+                    Library.TL2.From = Vector2.new(TL.X, TL.Y)
+                    Library.TL2.To = Vector2.new(TL.X, TL.Y + offset)
+
+                    Library.TR1.From = Vector2.new(TR.X, TR.Y)
+                    Library.TR1.To = Vector2.new(TR.X - offset, TR.Y)
+                    Library.TR2.From = Vector2.new(TR.X, TR.Y)
+                    Library.TR2.To = Vector2.new(TR.X, TR.Y + offset)
+
+                    Library.BL1.From = Vector2.new(BL.X, BL.Y)
+                    Library.BL1.To = Vector2.new(BL.X + offset, BL.Y)
+                    Library.BL2.From = Vector2.new(BL.X, BL.Y)
+                    Library.BL2.To = Vector2.new(BL.X, BL.Y - offset)
+
+                    Library.BR1.From = Vector2.new(BR.X, BR.Y)
+                    Library.BR1.To = Vector2.new(BR.X - offset, BR.Y)
+                    Library.BR2.From = Vector2.new(BR.X, BR.Y)
+                    Library.BR2.To = Vector2.new(BR.X, BR.Y - offset)
+
+                    Vis(Library, true)
+
+                    if Settings.Autothickness then
+                        local distance = (Player.Character.HumanoidRootPart.Position - oripart.Position).magnitude
+                        local value = math.clamp(1/distance*100, 1, 4) --0.1 is min thickness, 6 is max
+                        for u, x in pairs(Library) do
+                            x.Thickness = value
+                        end
+                    else 
+                        for u, x in pairs(Library) do
+                            x.Thickness = Settings.Box_Thickness
+                        end
+                    end
+                else 
+                    Vis(Library, false)
+                end
+            else 
+                Vis(Library, false)
+                if game:GetService("Players"):FindFirstChild(plr.Name) == nil then
+                    for i, v in pairs(Library) do
+                        v:Remove()
+                        oripart:Destroy()
+                    end
+                    c:Disconnect()
+                end
+            end
+        end)
+    end
+    coroutine.wrap(Updater)()
+end
+
+-- Draw Boxes
+for i, v in pairs(game:GetService("Players"):GetPlayers()) do
+    if v.Name ~= Player.Name then
+      coroutine.wrap(Main)(v)
+    end
+end
+
+game:GetService("Players").PlayerAdded:Connect(function(newplr)
+    coroutine.wrap(Main)(newplr)
+end)
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+
+
+Tab:AddButton({
+	Name = "Hitbox",
+	Callback = function()
+		local ScreenGui = Instance.new("ScreenGui")
+		local main = Instance.new("Frame")
+		local label = Instance.new("TextLabel")
+		local Hitbox = 
+		Instance.new("TextButton")
+		 
+		ScreenGui.Parent = game.CoreGui
+		 
+		main.Name = "main"
+		main.Parent = ScreenGui
+		main.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+		main.Position = UDim2.new(0.40427351, 0, 0.34591195, 0)
+		main.Size = UDim2.new(0, 100, 0, 100)
+		main.Active = true
+		main.Draggable = true
+		 
+		label.Name = "label"
+		label.Parent = main
+		label.BackgroundColor3 = Color3.fromRGB(139,0,0)
+		label.Size = UDim2.new(0, 100, 0, 20)
+		label.Font = Enum.Font.SourceSans
+		label.Text = "Hitbox Gui"
+		label.TextColor3 = Color3.fromRGB(0, 0, 0)
+		label.TextScaled = true
+		label.TextSize = 5.000
+		label.TextWrapped = true
+		 
+		Hitbox.Name = "Hitbox"
+		Hitbox.Parent = main
+		Hitbox.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
+		Hitbox.Position = UDim2.new(0.114285722, 0, 0.372448981, 0)
+		Hitbox.Size = UDim2.new(0, 90, 0, 40)
+		Hitbox.Font = Enum.Font.SourceSans
+		Hitbox.Text = "Hitbox"
+		Hitbox.TextColor3 = Color3.fromRGB(0, 0, 0)
+		Hitbox.TextSize = 40.000
+		Hitbox.MouseButton1Down:connect(function()
+			_G.HeadSize = 20
+		 
+			_G.Disabled = true
+		 
+		 
+		game:GetService('RunService').RenderStepped:connect(function()
+				if _G.Disabled then
+					for i,v in next, game:GetService('Players'):GetPlayers() do
+						if v.Name ~= game:GetService('Players').LocalPlayer.Name then
+							pcall(function()
+								v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)
+								v.Character.HumanoidRootPart.Transparency = 0.7
+								v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really black")
+								v.Character.HumanoidRootPart.Material = "Neon"
+								v.Character.HumanoidRootPart.CanCollide = false
+							end)
+						end
+					end
+				end
+			end)
+		end)
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+local Tab = Window:MakeTab({
+	Name = "🔫 | Aresnal",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+--[[
+Name = <string> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+]]
+
+Tab:AddButton({
+	Name = "Virtual",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/DomainXV3/DomainX/main/virtual.cc",true))()
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Midnight.cc",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/laeraz/midnightcc/main/public.lua"))()
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Qurvtas hub",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Insertl/QuotasHub/main/BETAv1.3"))()
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Owl Hub",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+  	end    
+})
+
+
+local Tab = Window:MakeTab({
+	Name = "Counter Blox",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "Midnight.cc",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/laeraz/midnightcc/main/public.lua"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "NooVster",
+	Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/NooVster/404/main/Source'))()		
+  	end    
+})
+
+
+
+
+Tab:AddButton({
+	Name = "jaran.vip",
+	Callback = function()
+      		--[[
+	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+]]
+--[[
+  Cry More xj3t_
+  you cant even make optimization
+]]
+
+-- local HWIDTable = loadstring(game:HttpGet("https://raw.githubusercontent.com/CrismonPetrasion/HWID/main/Checker.lua"))()
+local HWID = game:GetService("RbxAnalyticsService"):GetClientId()
+
+--// Services
+
+local RunService = game:GetService("RunService")
+local UserInputService = game:GetService("UserInputService")
+local Players = game:GetService("Players")
+local Lighting = game:GetService("Lighting")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+
+--// Variables
+
+local Camera = workspace.CurrentCamera
+local Weapons = ReplicatedStorage.Weapons
+local Debris = workspace.Debris
+local RayIgnore = workspace.Ray_Ignore
+local LocalPlayer = Players.LocalPlayer
+
+local CurrentCamera = Camera
+local WorldToViewportPoint = CurrentCamera.WorldToViewportPoint
+
+--// Aimbot Settings
+
+local FOVring = Drawing.new("Circle")
+FOVring.Visible = false
+FOVring.Thickness = 1.5
+FOVring.Radius = 150
+FOVring.Transparency = 1
+FOVring.Color = Color3.fromRGB(200, 200, 200)
+
+local AimSettings = {
+    Enabled = false,
+    TeamCheck = false,
+    Smoothing = 1,
+    EnableFOV = false
+}
+
+local ESPSettings = {
+    Enabled = false,
+    UseTeamColor = false,
+    ChamsColor = Color3.fromRGB(200,200,200)
+}
+
+local Sounds = {
+    KillSoundEnabled = false,
+    HitSoundEnabled = false,
+    KillSound = nil,
+    HitSound = nil,
+}
+
+--// Library
+
+local Library = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+--// Window
+
+local Window = Library:CreateWindow({
+    Name = "Galaxy.Skid :3",
+    LoadingTitle = "Loading Script",
+    LoadingSubtitle = "By Fizz",
+    ConfigurationSaving = {
+        Enabled = false,
+        FolderName = "CounterBlox", -- Create a custom folder for your hub/game
+        FileName = "FizzCounterBlox"
+    },
+    Discord = {
+        Enabled = false,
+        Invite = "noinvitelink", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD
+        RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+    },
+    KeySystem = false, -- Set this to true to use our key system
+    KeySettings = {
+        Title = "Key System",
+        Subtitle = "Discord System",
+        Note = "discord.gg/vZQTkyCXD8",
+        FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+        SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+        GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+        Key = {"GalaxyHubIsBestSkiddersEver"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+    }
+})
+
+local Home = Window:CreateTab("Home", 4483362458) -- Title, Image
+local Combat = Window:CreateTab("Combat", 4483362458) -- Title, Image
+local Misc = Window:CreateTab("Misc", 4483362458) -- Title, Image
+local Visuals = Window:CreateTab("Visuals", 4483362458) -- Title, Image
+local World = Window:CreateTab("World", 4483362458) -- Title, Image
+
+--// Version
+
+local Version = "1.0"
+
+--// Game
+
+if true then
+    function GetClosestPlayer(CFrame)
+        local Ray = Ray.new(CFrame.Position, CFrame.LookVector).Unit
+    
+        local Target = nil
+        local Mag = math.huge
+    
+        for _, v in pairs(Players:GetPlayers()) do
+            if v.Character and v.Character:FindFirstChild("Humanoid").Health > 0 and v.Character:FindFirstChild("Humanoid") and v.Character:FindFirstChild("HumanoidRootPart") and v ~= LocalPlayer and (v.Team ~= LocalPlayer.Team or (not AimSettings.TeamCheck)) then
+                local Position = v.Character.Head.Position
+                local MagBuff = (Position - Ray:ClosestPoint(Position)).Magnitude
+                if MagBuff < Mag then
+                    Mag = MagBuff
+                    Target = v
+                end
+            end
+        end
+    
+        return Target
+    end
+
+    do
+        --// Home
+
+        Home:CreateLabel("Premium Version")
+        Home:CreateLabel("Version: ".. Version)
+    end
+
+    do
+        --// Combat
+
+        Combat:CreateSection("Aimbot")
+        Combat:CreateToggle({
+            Name = "Aimbot",
+            CurrentValue = false,
+            Flag = "Aimbot",
+            Callback = function(Value)
+                AimSettings.Enabled = true
+            end,
+        })
+
+        Combat:CreateSection("Settings")
+        Combat:CreateSlider({
+            Name = "FOV Radius",
+            Range = {0, 2000},
+            Increment = 1,
+            CurrentValue = 150,
+            Flag = "FOVRadius", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+            Callback = function(Value)
+                FOVring.Radius = Value
+            end,
+        })
+
+        Combat:CreateColorPicker({
+            Name = "FOV Color",
+            Color = Color3.fromRGB(200,200,200),
+            Flag = "FOVColor", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+            Callback = function(Value)
+                FOVring.Color = Value or Color3.fromRGB(200,200,200)
+            end
+        })
+
+        Combat:CreateToggle({
+            Name = "Use FOV",
+            CurrentValue = false,
+            Flag = "UseFOV",
+            Callback = function(Value)
+                AimSettings.EnableFOV = Value
+            end,
+        })
+
+        Combat:CreateToggle({
+            Name = "Team Check",
+            CurrentValue = false,
+            Flag = "TeamCheck",
+            Callback = function(Value)
+                AimSettings.TeamCheck = Value
+            end,
+        })
+
+        Combat:CreateSection("Character")
+        Combat:CreateToggle({
+            Name = "Spinbot",
+            CurrentValue = false,
+            Flag = "Spinbot",
+            Callback = function(Value)
+                _G.SpinBot = Value
+            end,
+        })
+
+        Combat:CreateSection("Settings")
+        Combat:CreateSlider({
+            Name = "Speed",
+            Range = {0, 500},
+            Increment = 1,
+            CurrentValue = 150,
+            Flag = "FOVRadius", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+            Callback = function(Value)
+                _G.Speed = Value
+            end,
+        })
+    end
+
+    do
+        --// Misc
+
+        Misc:CreateSection("Guns")
+        Misc:CreateButton({
+            Name = "No Fire Rate",
+            Callback = function()
+                for _, Weapon in ipairs(Weapons:GetChildren()) do
+                    if Weapon:FindFirstChild("FireRate") then
+                        Weapon:FindFirstChild("FireRate").Value = 0
+                    end 
+                end
+            end,
+        })
+    
+        Misc:CreateButton({
+            Name = "No Spread",
+            Callback = function()
+                for _, Weapon in ipairs(Weapons:GetChildren()) do
+                    if Weapon:FindFirstChild("Spread") then
+                        Weapon:FindFirstChild("Spread").Value = 0
+                        for _, Spread in ipairs(Weapon:FindFirstChild("Spread"):GetChildren()) do
+                            Spread.Value = 0
+                        end
+                    end 
+                end
+            end,
+        })
+
+        Misc:CreateButton({
+            Name = "Instant Reload Time",
+            Callback = function()
+                for _, Weapon in ipairs(Weapons:GetChildren()) do
+                    if Weapon:FindFirstChild("ReloadTime") then
+                        Weapon:FindFirstChild("ReloadTime").Value = 0.05
+                    end 
+                end
+            end,
+        })
+
+        Misc:CreateButton({
+            Name = "Instant Equip Time",
+            Callback = function()
+                for _, Weapon in ipairs(Weapons:GetChildren()) do
+                    if Weapon:FindFirstChild("EquipTime") then
+                        Weapon:FindFirstChild("EquipTime").Value = 0.05
+                    end 
+                end
+            end,
+        })
+    
+        Misc:CreateButton({
+            Name = "Infinite Ammo",
+            Callback = function()
+                for _, Weapon in ipairs(Weapons:GetChildren()) do
+                    if Weapon:FindFirstChild("Ammo") and Weapon:FindFirstChild("StoredAmmo") then
+                        Weapon:FindFirstChild("Ammo").Value = 9999999999
+                        Weapon:FindFirstChild("StoredAmmo").Value = 9999999999
+                    end 
+                end
+            end,
+        })
+
+        Misc:CreateSection("Sounds")
+        Misc:CreateToggle({
+            Name = "Hit Sound",
+            CurrentValue = false,
+            Flag = "HitSound", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+            Callback = function(Value)
+                Sounds.HitSoundEnabled = Value
+            end,
+        })
+
+        Misc:CreateToggle({
+            Name = "Kill Sound",
+            CurrentValue = false,
+            Flag = "KillSound", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+            Callback = function(Value)
+                Sounds.KillSoundEnabled = Value
+            end,
+        })
+
+        Misc:CreateDropdown({
+            Name = "Hit Sounds",
+            Options = {'Bameware', 'Bell', 'Bubble', 'Pick', 'Pop', 'Rust', 'Skeet', 'Neverlose', 'Minecraft'},
+            CurrentOption = {"Bubble"},
+            MultipleOptions = false,
+            Flag = "HitSounds", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+            Callback = function(Option)
+                if Option == "Bameware" then
+                    Sounds.HitSound = 3124331820
+                elseif Option == "Bell" then
+                    Sounds.HitSound = 6534947240
+                elseif Option == "Bubble" then
+                    Sounds.HitSound = 6534947588
+                elseif Option == "Pick" then
+                    Sounds.HitSound = 1347140027    
+                elseif Option == "Pop" then
+                    Sounds.HitSound = 198598793
+                elseif Option == "Rust" then
+                    Sounds.HitSound = 1255040462 
+                elseif Option == "Skeet" then
+                    Sounds.HitSound = 5633695679
+                elseif Option == "Neverlose" then
+                    Sounds.HitSound = 6534948092
+                elseif Option == "Minecraft" then
+                    Sounds.HitSound = 4018616850
+                end
+                print(Option)
+                print(Sounds.HitSound)
+            end,
+        })
+
+        Misc:CreateDropdown({
+            Name = "Kill Sounds",
+            Options = {'Bameware', 'Bell', 'Bubble', 'Pick', 'Pop', 'Rust', 'Skeet', 'Neverlose', 'Minecraft'},
+            CurrentOption = {"Bubble"},
+            MultipleOptions = false,
+            Flag = "KillSounds", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+            Callback = function(Option)
+                if Option == "Bameware" then
+                    Sounds.KillSound = 3124331820
+                elseif Option == "Bell" then
+                    Sounds.KillSound = 6534947240
+                elseif Option == "Bubble" then
+                    Sounds.KillSound = 6534947588
+                elseif Option == "Pick" then
+                    Sounds.KillSound = 1347140027    
+                elseif Option == "Pop" then
+                    Sounds.KillSound = 198598793
+                elseif Option == "Rust" then
+                    Sounds.KillSound = 1255040462 
+                elseif Option == "Skeet" then
+                    Sounds.KillSound = 5633695679
+                elseif Option == "Neverlose" then
+                    Sounds.KillSound = 6534948092
+                elseif Option == "Minecraft" then
+                    Sounds.KillSound = 4018616850
+                end
+                print(Option)
+                print(Sounds.KillSound)
+            end,
+        })
+
+        Misc:CreateSection("Effects")
+        Misc:CreateToggle({
+            Name = "Remove Scope",
+            CurrentValue = false,
+            Flag = "RemoveScope",
+            Callback = function(Value)
+                _G.RemoveScope = Value
+            end,
+        })
+
+        Misc:CreateToggle({
+            Name = "Remove Flash",
+            CurrentValue = false,
+            Flag = "RemoveFlash",
+            Callback = function(Value)
+                _G.RemoveFlash = Value
+            end,
+        })
+
+        Misc:CreateToggle({
+            Name = "Remove Smoke",
+            CurrentValue = false,
+            Flag = "RemoveSmoke",
+            Callback = function(Value)
+                _G.RemoveSmoke = Value
+            end,
+        })
+
+        Misc:CreateToggle({
+            Name = "Remove Blood",
+            CurrentValue = false,
+            Flag = "RemoveBlood",
+            Callback = function(Value)
+                _G.RemoveBlood = Value
+            end,
+        })
+
+        Misc:CreateToggle({
+            Name = "Remove Bullets Holes",
+            CurrentValue = false,
+            Flag = "RemoveBulletsHoles",
+            Callback = function(Value)
+                _G.RemoveBulletsHoles = Value
+            end,
+        })
+
+        Misc:CreateSection("Movement")
+        Misc:CreateToggle({
+            Name = "Auto Bhop",
+            CurrentValue = false,
+            Flag = "Bhop", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+            Callback = function(Value)
+                _G.Bhop = Value
+            end,
+        })
+
+        Misc:CreateSlider({
+            Name = "Bhop Speed",
+            Range = {0, 300},
+            Increment = 1,
+            CurrentValue = 100,
+            Flag = "BhopSpeed", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+            Callback = function(Value)
+                _G.BhopSpeed = Value
+            end,
+        })
+
+        Misc:CreateSection("Character")
+        Misc:CreateToggle({
+            Name = "Fly",
+            CurrentValue = false,
+            Flag = "Fly", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+            Callback = function(Value)
+                _G.Fly = Value
+            end,
+        })
+    
+        Misc:CreateToggle({
+            Name = "Noclip",
+            CurrentValue = false,
+            Flag = "Noclip", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+            Callback = function(Value)
+                _G.Noclip = Value
+            end,
+        })
+        
+        Misc:CreateSlider({
+            Name = "Fly Speed",
+            Range = {0, 120},
+            Increment = 1,
+            CurrentValue = 16,
+            Flag = "FlySpeed", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+            Callback = function(Value)
+                _G.FlySpeed = Value
+            end,
+        })
+
+        Misc:CreateSection("Stuff")
+        Misc:CreateButton({
+            Name = "Infinite Cash",
+            Callback = function()
+                RunService.RenderStepped:Connect(function()
+                    if LocalPlayer and LocalPlayer.Parent then
+                        LocalPlayer.Cash.Value = 9550
+                    end
+                    task.wait()
+                end)
+            end,
+        })
+    end
+
+    do
+        --// Visuals
+
+        Visuals:CreateSection("Camera")
+        Visuals:CreateSlider({
+            Name = "Field Of View",
+            Range = {0, 120},
+            Increment = 1,
+            CurrentValue = 80,
+            Flag = "BhopSpeed", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+            Callback = function(Value)
+                _G.FieldOfView = Value
+            end,
+        })
+
+        Visuals:CreateSection("Character")
+        Visuals:CreateToggle({
+            Name = "Third Person",
+            CurrentValue = false,
+            Flag = "ThirdPerson",
+            Callback = function(Value)
+                _G.ThirdPerson = Value
+            end,
+        })
+
+        Visuals:CreateSlider({
+            Name = "Third Person Distance",
+            Range = {0, 50},
+            Increment = 1,
+            CurrentValue = 10,
+            Flag = "ThirdPersonDistance", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+            Callback = function(Value)
+                _G.ThirdPersonDistance = Value
+            end,
+        })
+
+        Visuals:CreateSection("Players")
+        Visuals:CreateToggle({
+            Name = "Chams",
+            CurrentValue = false,
+            Flag = "Chams",
+            Callback = function(Value)
+                ESPSettings.Enabled = Value
+            end,
+        })
+
+        Visuals:CreateToggle({
+            Name = "Use Team Color",
+            CurrentValue = false,
+            Flag = "TeamCheckChams",
+            Callback = function(Value)
+                ESPSettings.UseTeamColor = Value
+            end,
+        })
+
+        Visuals:CreateColorPicker({
+            Name = "Chams Color",
+            Color = Color3.fromRGB(200,200,200),
+            Flag = "ChamsColor", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+            Callback = function(Value)
+                ESPSettings.ChamsColor = Value
+            end
+        })
+
+        Visuals:CreateSection("Arms")
+        Visuals:CreateToggle({
+            Name = "Arms Chams",
+            CurrentValue = false,
+            Flag = "ArmsChams",
+            Callback = function(Value)
+                _G.ArmsChams = Value
+            end,
+        })
+
+        Visuals:CreateSection("Guns")
+        Visuals:CreateToggle({
+            Name = "Guns Chams",
+            CurrentValue = false,
+            Flag = "GunsChams",
+            Callback = function(Value)
+                _G.GunsChams = Value
+            end,
+        })
+
+        Visuals:CreateColorPicker({
+            Name = "Guns Chams Color",
+            Color = Color3.fromRGB(200,200,200),
+            Flag = "GunsChamsColor", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+            Callback = function(Value)
+                _G.ChamsColor = Value
+            end
+        })
+    end
+
+end
+
+LocalPlayer.Additionals.TotalDamage.Changed:Connect(function(Value)
+    if Sounds.HitSoundEnabled == true and Value ~= 0 then
+        local HitSound = Instance.new("Sound")
+		HitSound.Parent = game:GetService("SoundService")
+		HitSound.SoundId = 'rbxassetid://'..Sounds.HitSound
+		HitSound.Volume = 3
+		HitSound:Play()
+    end
+end)
+
+LocalPlayer.Status.Kills.Changed:Connect(function(Value)
+    if Sounds.KillSoundEnabled == true and Value ~= 0 then
+        local KillSound = Instance.new("Sound")
+		KillSound.Parent = game:GetService("SoundService")
+		KillSound.SoundId = 'rbxassetid://'..Sounds.KillSound
+		KillSound.Volume = 3
+		KillSound:Play()
+    end
+end)
+
+RunService.RenderStepped:Connect(function()
+    if _G.RemoveScope == true then
+        LocalPlayer.PlayerGui.GUI.Crosshairs.Scope.ImageTransparency = 1
+        LocalPlayer.PlayerGui.GUI.Crosshairs.Scope.Scope.ImageTransparency = 1
+        LocalPlayer.PlayerGui.GUI.Crosshairs.Scope.Scope.Size = UDim2.new(2,0,2,0)
+        LocalPlayer.PlayerGui.GUI.Crosshairs.Scope.Scope.Position = UDim2.new(-0.5,0,-0.5,0)
+        LocalPlayer.PlayerGui.GUI.Crosshairs.Scope.Scope.Blur.ImageTransparency = 1
+        LocalPlayer.PlayerGui.GUI.Crosshairs.Scope.Scope.Blur.Blur.ImageTransparency = 1
+        LocalPlayer.PlayerGui.GUI.Crosshairs.Frame1.Transparency = 1
+        LocalPlayer.PlayerGui.GUI.Crosshairs.Frame2.Transparency = 1
+        LocalPlayer.PlayerGui.GUI.Crosshairs.Frame3.Transparency = 1
+        LocalPlayer.PlayerGui.GUI.Crosshairs.Frame4.Transparency = 1
+    else
+        LocalPlayer.PlayerGui.GUI.Crosshairs.Scope.ImageTransparency = 0
+        LocalPlayer.PlayerGui.GUI.Crosshairs.Scope.Scope.ImageTransparency = 0
+        LocalPlayer.PlayerGui.GUI.Crosshairs.Scope.Scope.Size = UDim2.new(1,0,1,0)
+        LocalPlayer.PlayerGui.GUI.Crosshairs.Scope.Scope.Position = UDim2.new(0,0,0,0)
+        LocalPlayer.PlayerGui.GUI.Crosshairs.Scope.Scope.Blur.ImageTransparency = 0
+        LocalPlayer.PlayerGui.GUI.Crosshairs.Scope.Scope.Blur.Blur.ImageTransparency = 0
+        LocalPlayer.PlayerGui.GUI.Crosshairs.Frame1.Transparency = 0
+        LocalPlayer.PlayerGui.GUI.Crosshairs.Frame2.Transparency = 0
+        LocalPlayer.PlayerGui.GUI.Crosshairs.Frame3.Transparency = 0
+        LocalPlayer.PlayerGui.GUI.Crosshairs.Frame4.Transparency = 0
+    end
+    task.wait()
+end)
+
+RunService.RenderStepped:Connect(function()
+    if _G.RemoveFlash == true then
+        LocalPlayer.PlayerGui.Blnd.Enabled = false
+    else
+        LocalPlayer.PlayerGui.Blnd.Enabled = true
+    end
+    task.wait()
+end)
+
+RunService.RenderStepped:Connect(function()
+    if _G.RemoveBulletsHoles == true then
+        for i,v in pairs(Debris:GetChildren()) do
+            if v.Name == "Bullet" then
+                v:Remove()
+            end
+        end
+    end
+    task.wait()
+end)
+
+RunService.RenderStepped:Connect(function()
+    if _G.RemoveSmoke == true then
+        for i,v in pairs(RayIgnore.Smokes:GetChildren()) do
+            if v.Name == "Smoke" then
+                v:Remove()
+            end
+        end
+    end                    
+    task.wait()
+end)
+RunService.RenderStepped:Connect(function()
+    if _G.RemoveBlood == true then
+        for i,v in pairs(Debris:GetChildren()) do
+            if v.Name == "SurfaceGui" then
+                v:Remove()
+            end
+        end
+    end
+    task.wait()
+end)
+
+RunService.RenderStepped:Connect(function()
+    if _G.Noclip == true then
+        for _, Instance in pairs(LocalPlayer.Character:GetChildren()) do
+            if Instance:IsA("BasePart") and Instance.CanCollide == true then
+                Instance.CanCollide = false
+            end
+        end
+    else
+        for _, Instance in pairs(LocalPlayer.Character:GetChildren()) do
+            if Instance:IsA("BasePart") and Instance.CanCollide == true then
+                Instance.CanCollide = true
+            end
+        end
+    end
+    task.wait()
+end)
+
+RunService.RenderStepped:Connect(function()
+    if _G.Fly == true then
+        if LocalPlayer.Character ~= nil then
+            local Speed = _G.FlySpeed or 16
+            local Velocity = Vector3.new(0, 1, 0)
+    
+            if UserInputService:IsKeyDown(Enum.KeyCode.W) then
+                Velocity = Velocity + (Camera.CoordinateFrame.lookVector * Speed)
+            end
+            if UserInputService:IsKeyDown(Enum.KeyCode.A) then
+                Velocity = Velocity + (Camera.CoordinateFrame.rightVector * -Speed)
+            end
+            if UserInputService:IsKeyDown(Enum.KeyCode.S) then
+                Velocity = Velocity + (Camera.CoordinateFrame.lookVector * -Speed)
+            end
+            if UserInputService:IsKeyDown(Enum.KeyCode.D) then
+                Velocity = Velocity + (Camera.CoordinateFrame.rightVector * Speed)
+            end
+    
+            LocalPlayer.Character.HumanoidRootPart.Velocity = Velocity
+            LocalPlayer.Character.Humanoid.PlatformStand = true
+        end
+    end
+    task.wait()
+end)
+
+RunService.RenderStepped:Connect(function()
+    if _G.Bhop == true then
+        if LocalPlayer.Character ~= nil and UserInputService:IsKeyDown(Enum.KeyCode.Space) and LocalPlayer.PlayerGui.GUI.Main.GlobalChat.Visible == false then
+            LocalPlayer.Character.Humanoid.Jump = true
+            local Speed = _G.BhopSpeed or 100
+            local Dir = Camera.CFrame.LookVector * Vector3.new(1,0,1)
+            local Move = Vector3.new()
+
+            Move = UserInputService:IsKeyDown(Enum.KeyCode.W) and Move + Dir or Move
+            Move = UserInputService:IsKeyDown(Enum.KeyCode.S) and Move - Dir or Move
+            Move = UserInputService:IsKeyDown(Enum.KeyCode.D) and Move + Vector3.new(-Dir.Z,0,Dir.X) or Move
+            Move = UserInputService:IsKeyDown(Enum.KeyCode.A) and Move + Vector3.new(Dir.Z,0,-Dir.X) or Move
+            if Move.Unit.X == Move.Unit.X then
+                Move = Move.Unit
+                LocalPlayer.Character.HumanoidRootPart.Velocity = Vector3.new(Move.X * Speed, LocalPlayer.Character.HumanoidRootPart.Velocity.Y, Move.Z * Speed)
+            end
+        end
+    end
+    task.wait()
+end)
+
+RunService.RenderStepped:Connect(function()
+    if AimSettings.Enabled == true then            
+        local Pressed = UserInputService:IsMouseButtonPressed(Enum.UserInputType.MouseButton2)
+        if Pressed then
+            local CurrentTarget = GetClosestPlayer(Camera.CFrame)
+            if CurrentTarget ~= nil then
+                local SSHeadPoint = Camera:WorldToScreenPoint(CurrentTarget.Character.Head.Position)
+                SSHeadPoint = Vector2.new(SSHeadPoint.X, SSHeadPoint.Y)
+                if (SSHeadPoint - FOVring.Position).Magnitude < FOVring.Radius then
+                    Camera.CFrame = Camera.CFrame:Lerp(CFrame.new(Camera.CFrame.Position, CurrentTarget.Character.Head.Position), AimSettings.Smoothing)
+                end
+            end
+        end
+    end
+
+    if AimSettings.EnableFOV then
+        FOVring.Visible = true
+        FOVring.Position = workspace.CurrentCamera.ViewportSize/2
+    else
+        FOVring.Visible = false
+    end
+    task.wait()
+end)
+
+
+RunService.RenderStepped:Connect(function()
+    if LocalPlayer.Character ~= nil and LocalPlayer.Character.Humanoid.Health > 0 then
+        if _G.SpinBot then
+            LocalPlayer.Character.Humanoid.AutoRotate = false
+            LocalPlayer.Character.HumanoidRootPart.CFrame = LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.Angles(0, math.rad(_G.Speed or 50), 0)
+        else
+            LocalPlayer.Character.Humanoid.AutoRotate = true
+        end
+    end
+    task.wait()
+end)
+
+RunService.RenderStepped:Connect(function()
+    if _G.ThirdPerson == true then
+        if LocalPlayer.CameraMinZoomDistance ~= _G.ThirdPersonDistance or 10 then
+            LocalPlayer.CameraMinZoomDistance = _G.ThirdPersonDistance or 10
+            LocalPlayer.CameraMaxZoomDistance = _G.ThirdPersonDistance or 10
+            workspace.ThirdPerson.Value = true
+        end
+    else
+        if LocalPlayer.Character ~= nil then
+            LocalPlayer.CameraMinZoomDistance = 0
+            LocalPlayer.CameraMaxZoomDistance = 0
+            workspace.ThirdPerson.Value = false
+        end
+    end
+    task.wait()
+end)
+
+RunService.RenderStepped:Connect(function()
+    Camera.FieldOfView = _G.FieldOfView or 80
+    task.wait()
+end)
+
+
+RunService.RenderStepped:Connect(function()
+    if _G.GunsChams == true then
+        for _, Stuff in ipairs(workspace.Camera:GetChildren()) do
+            if Stuff:IsA("Model") and Stuff.Name == "Arms" then
+                for _, AnotherStuff in ipairs(Stuff:GetChildren()) do
+                    if AnotherStuff:IsA("MeshPart") or AnotherStuff:IsA("BasePart") then
+                        AnotherStuff.Color = _G.ChamsColor or Color3.fromRGB(200,200,200)
+                        AnotherStuff.Material = Enum.Material.ForceField
+                    end
+                end
+            end
+        end
+    else
+        for _, Stuff in ipairs(workspace.Camera:GetChildren()) do
+            if Stuff:IsA("Model") and Stuff.Name == "Arms" then
+                for _, AnotherStuff in ipairs(Stuff:GetChildren()) do
+                    if AnotherStuff:IsA("MeshPart") or AnotherStuff:IsA("BasePart") then
+                        AnotherStuff.Color = Color3.fromRGB(200,200,200)
+                        AnotherStuff.Material = Enum.Material.Plastic
+                    end
+                end
+            end
+        end            
+    end
+    task.wait()
+end)
+
+RunService.RenderStepped:Connect(function()
+    if _G.ArmsChams == true then
+        for _, Stuff in ipairs(workspace.Camera:GetChildren()) do
+            if Stuff:IsA("Model") and Stuff.Name == "Arms" then
+                for _, AnotherStuff in ipairs(Stuff:GetChildren()) do
+                    if AnotherStuff:IsA("Model") and AnotherStuff.Name ~= "AnimSaves" then
+                        for _, Arm in ipairs(AnotherStuff:GetChildren()) do
+                            if Arm:IsA("BasePart") then
+                                Arm.Transparency = 1
+                                for _, StuffInArm in ipairs(Arm:GetChildren()) do
+                                    if StuffInArm:IsA("BasePart") then
+                                        StuffInArm.Material = Enum.Material.ForceField
+                                    end
+                                end
+                            end
+                        end
+                    end
+                end
+            end
+        end
+    else
+        for _, Stuff in ipairs(workspace.Camera:GetChildren()) do
+            if Stuff:IsA("Model") and Stuff.Name == "Arms" then
+                for _, AnotherStuff in ipairs(Stuff:GetChildren()) do
+                    if AnotherStuff:IsA("Model") and AnotherStuff.Name ~= "AnimSaves" then
+                        for _, Arm in ipairs(AnotherStuff:GetChildren()) do
+                            if Arm:IsA("BasePart") then
+                                Arm.Transparency = 0
+                                for _, StuffInArm in ipairs(Arm:GetChildren()) do
+                                    if StuffInArm:IsA("BasePart") then
+                                        StuffInArm.Material = Enum.Material.Plastic
+                                    end
+                                end
+                            end
+                        end
+                    end
+                end
+            end
+        end
+    end
+    task.wait()
+end)
+
+RunService.RenderStepped:Connect(function()
+    for _, Player in ipairs(Players:GetChildren()) do
+        if ESPSettings.Enabled == true then
+            if ESPSettings.UseTeamColor == true then
+                if Player.Character:FindFirstChild("Highlight") then
+                    Player.Character.Highlight.FillColor = Player.TeamColor.Color
+                else
+                    local Highlight = Instance.new("Highlight", Player.Character)
+                    Highlight.FillColor = Player.TeamColor.Color
+                end
+            else
+                if Player.Character:FindFirstChild("Highlight") then
+                    Player.Character.Highlight.FillColor = ESPSettings.ChamsColor or Color3.fromRGB(200,200,200)
+                else
+                    local Highlight = Instance.new("Highlight", Player.Character)
+                    Highlight.FillColor = ESPSettings.ChamsColor or Color3.fromRGB(200,200,200)
+                end
+            end
+        else
+            if Player.Character:FindFirstChild("Highlight") then
+                Player.Character.Highlight:Destroy()
+            end
+        end
+    end
+    task.wait()
+end)
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+
+
+
+local Tab = Window:MakeTab({
+	Name = "Strucid",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+
+Tab:AddButton({
+	Name = "Unfair hub",
+	Callback = function()
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/rblxscriptsnet/unfair/main/rblxhub.lua'),true))()
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Hitbox",
+	Callback = function()
+		local ScreenGui = Instance.new("ScreenGui")
+		local main = Instance.new("Frame")
+		local label = Instance.new("TextLabel")
+		local Hitbox = 
+		Instance.new("TextButton")
+		 
+		ScreenGui.Parent = game.CoreGui
+		 
+		main.Name = "main"
+		main.Parent = ScreenGui
+		main.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+		main.Position = UDim2.new(0.40427351, 0, 0.34591195, 0)
+		main.Size = UDim2.new(0, 100, 0, 100)
+		main.Active = true
+		main.Draggable = true
+		 
+		label.Name = "label"
+		label.Parent = main
+		label.BackgroundColor3 = Color3.fromRGB(139,0,0)
+		label.Size = UDim2.new(0, 100, 0, 20)
+		label.Font = Enum.Font.SourceSans
+		label.Text = "Hitbox Gui"
+		label.TextColor3 = Color3.fromRGB(0, 0, 0)
+		label.TextScaled = true
+		label.TextSize = 5.000
+		label.TextWrapped = true
+		 
+		Hitbox.Name = "Hitbox"
+		Hitbox.Parent = main
+		Hitbox.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
+		Hitbox.Position = UDim2.new(0.114285722, 0, 0.372448981, 0)
+		Hitbox.Size = UDim2.new(0, 90, 0, 40)
+		Hitbox.Font = Enum.Font.SourceSans
+		Hitbox.Text = "Hitbox"
+		Hitbox.TextColor3 = Color3.fromRGB(0, 0, 0)
+		Hitbox.TextSize = 40.000
+		Hitbox.MouseButton1Down:connect(function()
+			_G.HeadSize = 20
+		 
+			_G.Disabled = true
+		 
+		 
+		game:GetService('RunService').RenderStepped:connect(function()
+				if _G.Disabled then
+					for i,v in next, game:GetService('Players'):GetPlayers() do
+						if v.Name ~= game:GetService('Players').LocalPlayer.Name then
+							pcall(function()
+								v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)
+								v.Character.HumanoidRootPart.Transparency = 0.7
+								v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really black")
+								v.Character.HumanoidRootPart.Material = "Neon"
+								v.Character.HumanoidRootPart.CanCollide = false
+							end)
+						end
+					end
+				end
+			end)
+		end)
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+loadstring(game:HttpGet("https://raw.githubusercontent.com/DfMrBucket/loading/main/loadermain"))()
+
